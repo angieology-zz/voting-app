@@ -13,6 +13,17 @@ function voteForCandidate() {
   });
 }
 
+//mock out empty methods that interact with blockchain
+function registerTaxpayer() {
+  console.log('you are registered!')
+  alert('you are registered!')
+}
+
+function payTaxesFromAccount(){
+  console.log('you payed x amount, thank you')
+  alert('you paid x amount!')
+}
+
 $(document).ready(function() {
   candidateNames = Object.keys(candidates);
   for (var i = 0; i < candidateNames.length; i++) {
